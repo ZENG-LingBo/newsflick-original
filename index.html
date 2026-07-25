@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="theme-color" content="#ffe9e0">
+<title>NewsFlick — Original 3-Story Demo</title>
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300..700&family=Inter:wght@100..900&display=swap" rel="stylesheet">
+<style>
+*{box-sizing:border-box;margin:0;padding:0}
+html,body{min-height:100%;background:linear-gradient(180deg,#ffe9e0 0%,#ffd3c3 100%);
+  font-family:'Inter',-apple-system,system-ui,sans-serif;color:#272a27}
+body{display:flex;flex-direction:column;align-items:center;justify-content:center;
+  padding:40px 24px calc(40px + env(safe-area-inset-bottom));text-align:center;gap:8px;min-height:100dvh}
+.sun{position:fixed;top:30%;left:50%;transform:translate(-50%,-50%);width:340px;height:340px;
+  border-radius:50%;pointer-events:none;z-index:0;
+  background:radial-gradient(circle,#ffab6e 0%,#ffab6e 38%,rgba(255,171,110,0) 74%)}
+.wrap{position:relative;z-index:1;display:flex;flex-direction:column;align-items:center;gap:8px;max-width:460px;width:100%}
+h1{font-family:'Space Grotesk',sans-serif;font-weight:700;font-size:38px;line-height:42px;letter-spacing:-.02em}
+.sub{font-size:15px;line-height:22px;color:#61443a;max-width:340px}
+.links{margin-top:30px;display:flex;flex-direction:column;gap:12px;width:100%;max-width:320px}
+a.card{display:flex;align-items:center;justify-content:space-between;gap:12px;
+  background:#fff;border:1px solid rgba(67,71,66,.12);border-radius:999px;padding:16px 22px;
+  text-decoration:none;color:#1d201d;box-shadow:0 10px 24px rgba(0,0,0,.08);
+  font-family:'Space Grotesk',sans-serif;font-weight:600;font-size:17px;transition:transform .15s ease}
+a.card:active{transform:scale(.97)}
+a.card .arr{color:#800080;font-weight:700}
+a.zh{background:#800080;border-color:transparent;color:#fff}
+a.zh .arr{color:#c9fa85}
+.note{margin-top:26px;font-size:12.5px;line-height:18px;color:#8a6a5c;max-width:340px}
+.note a{color:#800080}
+</style>
+</head>
+<body>
+<div class="sun"></div>
+<div class="wrap">
+  <h1>NewsFlick</h1>
+  <p class="sub">The original three-story prototype — a single self-contained HTML file per language.</p>
+  <div class="links">
+    <a class="card" href="demo-en.html">English <span class="arr">→</span></a>
+    <a class="card zh" href="demo-zh.html">中文（香港） <span class="arr">→</span></a>
+  </div>
+  <p class="note">Archived build. The current four-story version lives at
+    <a href="https://zeng-lingbo.github.io/newsflick-demo/">newsflick-demo</a>.</p>
+</div>
+</body>
+</html>
